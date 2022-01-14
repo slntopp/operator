@@ -1,4 +1,4 @@
-module github.com/infinimesh/operator
+module github.com/slntopp/operator
 
 go 1.17
 
@@ -7,7 +7,6 @@ require (
 	github.com/go-logr/logr v0.1.0
 	github.com/onsi/gomega v1.5.0
 	github.com/slntopp/infinimesh v0.0.0-20220113173023-f25c85e31b27
-	github.com/slntopp/operator v0.0.0-20200219093753-5d840e5f8381
 	golang.org/x/net v0.0.0-20210917221730-978cfadd31cf
 	google.golang.org/grpc v1.43.0
 	k8s.io/api v0.0.0-20181213150558-05914d821849
@@ -34,7 +33,6 @@ require (
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/imdario/mergo v0.3.11 // indirect
-	github.com/infinimesh/infinimesh v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.6 // indirect; indirect bb
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
