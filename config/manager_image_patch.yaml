@@ -8,5 +8,5 @@ spec:
     spec:
       containers:
       # Change the value of image field below to your controller image URL
-      - image: ghcr.io/slntopp/infinimesh/operator:smartcountr
+      - image: ghcr.io/slntopp/infinimesh/operator:latest
         name: manager
