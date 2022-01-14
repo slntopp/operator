@@ -28,9 +28,9 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
 
-	"github.com/infinimesh/operator/pkg/apis"
-	"github.com/infinimesh/operator/pkg/controller"
-	"github.com/infinimesh/operator/pkg/webhook"
+	"github.com/slntopp/operator/pkg/apis"
+	"github.com/slntopp/operator/pkg/controller"
+	"github.com/slntopp/operator/pkg/webhook"
 )
 
 func main() {

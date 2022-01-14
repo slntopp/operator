@@ -17,8 +17,8 @@ require (
 	github.com/gregjones/httpcache v0.0.0-20190212212710-3befbb6ad0cc // indirect
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/imdario/mergo v0.3.11 // indirect
-	github.com/infinimesh/infinimesh v1.0.0
-	github.com/infinimesh/operator v0.0.0-20200219093753-5d840e5f8381
+	github.com/slntopp/infinimesh v1.0.0
+	github.com/slntopp/operator v0.0.0-20200219093753-5d840e5f8381
 	github.com/json-iterator/go v1.1.6 // indirect; indirect bb
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect

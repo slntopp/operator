@@ -13,7 +13,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileTelemetryRouter(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -37,7 +37,7 @@ func (r *ReconcilePlatform) reconcileTelemetryRouter(request reconcile.Request, 
 					Containers: []corev1.Container{
 						{
 							Name:            "telemetry-router",
-							Image:           "quay.io/infinimesh/telemetry-router:latest",
+							Image:           "ghcr.io/slntopp/infinimesh/telemetry-router:latest",
 							ImagePullPolicy: corev1.PullAlways,
 							VolumeMounts: []corev1.VolumeMount{
 								{

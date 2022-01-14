@@ -66,19 +66,19 @@ github.com/hpcloud/tail/winfile
 # github.com/imdario/mergo v0.3.11
 ## explicit
 github.com/imdario/mergo
-# github.com/infinimesh/infinimesh v1.0.0
+# github.com/slntopp/infinimesh v1.0.0
 ## explicit
-github.com/infinimesh/infinimesh/pkg/grafana
-github.com/infinimesh/infinimesh/pkg/node
-github.com/infinimesh/infinimesh/pkg/node/dgraph
-github.com/infinimesh/infinimesh/pkg/node/nodepb
-# github.com/infinimesh/operator v0.0.0-20200219093753-5d840e5f8381
+github.com/slntopp/infinimesh/pkg/grafana
+github.com/slntopp/infinimesh/pkg/node
+github.com/slntopp/infinimesh/pkg/node/dgraph
+github.com/slntopp/infinimesh/pkg/node/nodepb
+# github.com/slntopp/operator v0.0.0-20200219093753-5d840e5f8381
 ## explicit
-github.com/infinimesh/operator/pkg/apis
-github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1
-github.com/infinimesh/operator/pkg/controller
-github.com/infinimesh/operator/pkg/controller/platform
-github.com/infinimesh/operator/pkg/webhook
+github.com/slntopp/operator/pkg/apis
+github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1
+github.com/slntopp/operator/pkg/controller
+github.com/slntopp/operator/pkg/controller/platform
+github.com/slntopp/operator/pkg/webhook
 # github.com/json-iterator/go v1.1.6
 ## explicit
 github.com/json-iterator/go

@@ -13,7 +13,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileNodeserver(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -34,7 +34,7 @@ func (r *ReconcilePlatform) reconcileNodeserver(request reconcile.Request, insta
 					Containers: []corev1.Container{
 						{
 							Name:            "nodeserver",
-							Image:           "quay.io/infinimesh/nodeserver:latest",
+							Image:           "ghcr.io/slntopp/infinimesh/nodeserver:latest",
 							ImagePullPolicy: corev1.PullAlways,
 							Env: []corev1.EnvVar{
 								{

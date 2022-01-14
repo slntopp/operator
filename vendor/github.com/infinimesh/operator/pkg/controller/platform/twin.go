@@ -14,7 +14,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileTwin(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -39,7 +39,7 @@ func (r *ReconcilePlatform) reconcileTwin(request reconcile.Request, instance *i
 						Containers: []corev1.Container{
 							{
 								Name:            "shadow-delta-merger",
-								Image:           "quay.io/infinimesh/shadow-delta-merger:latest",
+								Image:           "ghcr.io/slntopp/infinimesh/shadow-delta-merger:latest",
 								ImagePullPolicy: corev1.PullAlways,
 								Env: []corev1.EnvVar{
 									{
@@ -100,7 +100,7 @@ func (r *ReconcilePlatform) reconcileTwin(request reconcile.Request, instance *i
 						Containers: []corev1.Container{
 							{
 								Name:            "shadow-persister",
-								Image:           "quay.io/infinimesh/shadow-persister:latest",
+								Image:           "ghcr.io/slntopp/infinimesh/shadow-persister:latest",
 								ImagePullPolicy: corev1.PullAlways,
 								Env: []corev1.EnvVar{
 									{
@@ -166,7 +166,7 @@ func (r *ReconcilePlatform) reconcileTwin(request reconcile.Request, instance *i
 						Containers: []corev1.Container{
 							{
 								Name:            "shadow-api",
-								Image:           "quay.io/infinimesh/shadow-api:latest",
+								Image:           "ghcr.io/slntopp/infinimesh/shadow-api:latest",
 								ImagePullPolicy: corev1.PullAlways,
 								Env: []corev1.EnvVar{
 									{

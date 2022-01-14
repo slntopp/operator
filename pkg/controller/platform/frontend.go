@@ -15,7 +15,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileFrontend(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -38,7 +38,7 @@ func (r *ReconcilePlatform) reconcileFrontend(request reconcile.Request, instanc
 					Containers: []corev1.Container{
 						{
 							Name:            "frontend",
-							Image:           "quay.io/infinimesh/frontend:latest",
+							Image:           "ghcr.io/slntopp/infinimesh/frontend:latest",
 							ImagePullPolicy: corev1.PullAlways,
 							Env: []corev1.EnvVar{
 								{

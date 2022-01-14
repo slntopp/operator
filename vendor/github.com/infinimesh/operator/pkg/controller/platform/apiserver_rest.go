@@ -15,7 +15,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileApiserverRest(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -38,7 +38,7 @@ func (r *ReconcilePlatform) reconcileApiserverRest(request reconcile.Request, in
 					Containers: []corev1.Container{
 						{
 							Name:            "apiserver-rest",
-							Image:           "quay.io/infinimesh/apiserver-rest:latest",
+							Image:           "ghcr.io/slntopp/infinimesh/apiserver-rest:latest",
 							ImagePullPolicy: corev1.PullAlways,
 							Env: []corev1.EnvVar{
 								{

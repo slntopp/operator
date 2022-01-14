@@ -1,7 +1,6 @@
 
 # Image URL to use all building/pushing image targets
-IMG ?= quay.io/infinimesh/operator:latest
-
+IMG ?= ghcr.io/slntopp/infinimesh/operator:latest
 all: test manager
 
 # Run tests
@@ -10,7 +9,7 @@ test: generate fmt vet manifests
 
 # Build manager binary
 manager: generate fmt vet
-	go build -o bin/manager github.com/infinimesh/operator/cmd/manager
+	go build -o bin/manager github.com/slntopp/operator/cmd/manager
 
 # Run against the configured Kubernetes cluster in ~/.kube/config
 run: generate fmt vet

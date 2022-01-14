@@ -15,7 +15,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 func (r *ReconcilePlatform) reconcileTimeseries(request reconcile.Request, instance *infinimeshv1beta1.Platform) error {
@@ -38,7 +38,7 @@ func (r *ReconcilePlatform) reconcileTimeseries(request reconcile.Request, insta
 						Containers: []corev1.Container{
 							{
 								Name:            "timescale-connector",
-								Image:           "quay.io/infinimesh/timescale-connector:latest",
+								Image:           "ghcr.io/slntopp/infinimesh/timescale-connector:latest",
 								ImagePullPolicy: corev1.PullAlways,
 								EnvFrom: []corev1.EnvFromSource{
 									{
@@ -278,7 +278,7 @@ datasources:
 							},
 							{
 								Name:  "proxy",
-								Image: "quay.io/infinimesh/grafana-proxy:latest",
+								Image: "ghcr.io/slntopp/infinimesh/grafana-proxy:latest",
 								Env: []corev1.EnvVar{
 									{
 										Name:  "NODE_HOST",

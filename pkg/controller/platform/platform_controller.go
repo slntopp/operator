@@ -33,7 +33,7 @@ import (
 
 	extensionsv1vbeta1 "k8s.io/api/extensions/v1beta1"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 var logger = logf.Log.WithName("controller")

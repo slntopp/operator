@@ -21,10 +21,10 @@ import (
 	"github.com/dgraph-io/dgo/protos/api"
 	"github.com/go-logr/logr"
 
-	"github.com/infinimesh/infinimesh/pkg/node"
-	"github.com/infinimesh/infinimesh/pkg/node/dgraph"
-	"github.com/infinimesh/infinimesh/pkg/node/nodepb"
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	"github.com/slntopp/infinimesh/pkg/node"
+	"github.com/slntopp/infinimesh/pkg/node/dgraph"
+	"github.com/slntopp/infinimesh/pkg/node/nodepb"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 const (

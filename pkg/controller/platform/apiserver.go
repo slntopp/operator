@@ -17,7 +17,7 @@ import (
 
 	"encoding/base64"
 
-	infinimeshv1beta1 "github.com/infinimesh/operator/pkg/apis/infinimesh/v1beta1"
+	infinimeshv1beta1 "github.com/slntopp/operator/pkg/apis/infinimesh/v1beta1"
 )
 
 // GenerateRandomBytes returns securely generated random bytes.
@@ -99,7 +99,7 @@ func (r *ReconcilePlatform) reconcileApiserver(request reconcile.Request, instan
 					Containers: []corev1.Container{
 						{
 							Name:            "apiserver",
-							Image:           "quay.io/infinimesh/apiserver:latest",
+							Image:           "ghcr.io/slntopp/infinimesh/apiserver:latest",
 							ImagePullPolicy: corev1.PullAlways,
 							Env: []corev1.EnvVar{
 								{
